@@ -1,0 +1,25 @@
+:root {
+    --primary: #4f46e5;
+    --dark: #1e293b;
+    --accent: #818cf8;
+}
+
+body { background: #e2e8f0;
+     margin: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif; }
+.dashboard {
+     display: grid;
+    grid-template-columns: 450px 1fr;
+     height: 100vh;
+     }
+.editor-area
+ { background: white; 
+    padding: 40px;
+     overflow-y: auto; }
+.preview-area {
+display: flex;
+    justify-content: center;
+     padding: 50px; 
+     overflow-y: auto; 
+     background: #cbd5e1;
+     }
