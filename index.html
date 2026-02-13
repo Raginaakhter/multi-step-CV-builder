@@ -63,6 +63,17 @@
         <button class="btn-primary" onclick="changeStep(4)">Next: Skills →</button>
     </div>
 </section>
+<section class="step" id="step-4">
+    <h2><span class="step-num">04</span> Skills & Projects</h2>
+    <div class="input-grid">
+        <textarea id="skills" placeholder="Skills (comma separated: HTML, CSS, React...)" oninput="updatePreview()"></textarea>
+        <textarea id="activities" placeholder="Achievements / Additional Projects" oninput="updatePreview()"></textarea>
+    </div>
+    <div class="nav-actions">
+        <button class="btn-text" onclick="changeStep(3)">← Back</button>
+        <button class="btn-primary" onclick="changeStep(5)">Preview CV</button>
+    </div>
+</section>
 </aside>
 
 
