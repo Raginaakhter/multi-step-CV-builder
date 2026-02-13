@@ -31,7 +31,22 @@
         <button class="btn-primary" onclick="changeStep(2)">Next: Education →</button>
     </div>
 </section>
-
+<section class="step" id="step-2">
+    <h2><span class="step-num">02</span> Education</h2>
+    <div id="education-container">
+        <div class="entry-box">
+            <input type="text" class="edu-degree" placeholder="Degree (e.g. BSc in CS)" oninput="updatePreview()">
+            <input type="text" class="edu-inst" placeholder="University" oninput="updatePreview()">
+            <input type="text" class="edu-year" placeholder="Year (20XX - 20XX)" oninput="updatePreview()">
+            <textarea class="edu-desc" placeholder="Brief description..." oninput="updatePreview()"></textarea>
+        </div>
+    </div>
+    <button class="btn-add" onclick="addEntry('education-container')">+ Add Education</button>
+    <div class="nav-actions">
+        <button class="btn-text" onclick="changeStep(1)">← Back</button>
+        <button class="btn-primary" onclick="changeStep(3)">Next: Experience →</button>
+    </div>
+</section>
 </aside>
 
 
