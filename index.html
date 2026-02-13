@@ -47,6 +47,22 @@
         <button class="btn-primary" onclick="changeStep(3)">Next: Experience →</button>
     </div>
 </section>
+<section class="step" id="step-3">
+    <h2><span class="step-num">03</span> Work Experience</h2>
+    <div id="experience-container">
+        <div class="entry-box">
+            <input type="text" class="exp-role" placeholder="Role/Position" oninput="updatePreview()">
+            <input type="text" class="exp-company" placeholder="Company Name" oninput="updatePreview()">
+            <input type="text" class="exp-year" placeholder="Year (20XX - 20XX)" oninput="updatePreview()">
+            <textarea class="exp-desc" placeholder="Job responsibilities..." oninput="updatePreview()"></textarea>
+        </div>
+    </div>
+    <button class="btn-add" onclick="addEntry('experience-container')">+ Add Experience</button>
+    <div class="nav-actions">
+        <button class="btn-text" onclick="changeStep(2)">← Back</button>
+        <button class="btn-primary" onclick="changeStep(4)">Next: Skills →</button>
+    </div>
+</section>
 </aside>
 
 
