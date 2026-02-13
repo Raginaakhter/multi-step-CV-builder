@@ -18,6 +18,20 @@
         <div class="progress-bar" id="progress-bar" style="width: 20%;"></div>
     </div>
 </div>
+
+<section class="step active" id="step-1">
+    <h2><span class="step-num">01</span> Personal Info</h2>
+    <div class="input-grid">
+        <input type="text" id="full-name" placeholder="Full Name" oninput="updatePreview()">
+        <input type="email" id="email" placeholder="Email Address" oninput="updatePreview()">
+        <input type="text" id="phone" placeholder="Phone Number" oninput="updatePreview()">
+        <input type="text" id="location" placeholder="City, State" oninput="updatePreview()">
+    </div>
+    <div class="nav-actions">
+        <button class="btn-primary" onclick="changeStep(2)">Next: Education →</button>
+    </div>
+</section>
+
 </aside>
 
 
