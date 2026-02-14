@@ -35,7 +35,7 @@ function updatePreview() {
 
     document.getElementById('p-location').innerText =
         document.getElementById('location').value || "City, State";
-}
+
 
     
     // Education Section
@@ -105,6 +105,7 @@ function updatePreview() {
             const span = document.createElement('span');
 
             span.className = 'skill-tag';
+
             span.style.marginRight = "8px";
             span.style.display = "inline-block";
             span.style.marginBottom = "6px";
@@ -117,3 +118,36 @@ function updatePreview() {
     // Activities Section
     document.getElementById('p-activities').innerText =
         document.getElementById('activities').value;
+
+
+
+
+ // Add Education  Experience 
+function addEntry(containerId) {
+    const container = document.getElementById(containerId);
+    const firstEntry = container.children[0];
+
+    const newEntry = firstEntry.cloneNode(true);
+
+    newEntry.querySelectorAll('input, textarea').forEach(input => {
+        input.value = '';
+    });
+
+    container.appendChild(newEntry);
+}
+
+}
+// PDF Download
+function downloadCV() {
+    const element = document.getElementById('cv-canvas');
+
+    const options = {
+        margin: 0,
+        filename: 'CV.pdf',
+        image: { type: 'jpeg', quality: 1 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(options).from(element).save();
+}
